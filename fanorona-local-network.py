@@ -12,7 +12,6 @@ WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
 BLUE = (0, 0, 255)
-GREEN = (0, 255, 0)
 
 # Taille de la fenêtre
 WIDTH, HEIGHT = 400, 400
@@ -21,7 +20,7 @@ POINT_RADIUS = 20
 
 # Initialisation de la fenêtre
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("fanorona-3-local network")
+pygame.display.set_caption("Jeu de Grille avec Déplacement")
 
 # Définir les positions des intersections
 positions = [
@@ -133,11 +132,11 @@ def main():
         draw_grid()
         draw_markers()
         if placement_phase:
-            draw_status(f"joueur {current_player} ")
+            draw_status(f"Tour du joueur {current_player} - Phase de placement")
         elif move_mode:
-            draw_status(f"joueur {current_player}")
+            draw_status(f"Déplacez le jeton du joueur {current_player}")
         else:
-            draw_status(f"joueur {current_player}")
+            draw_status(f"Tour du joueur {current_player}")
 
         pygame.display.update()
 
