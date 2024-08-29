@@ -2,6 +2,7 @@ import pygame
 import socket
 import pickle
 import sys
+import threading
 
 # Initialisation de Pygame
 pygame.init()

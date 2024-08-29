@@ -1,6 +1,0 @@
-!!!!!readme!!!!
-
-PYTHON FANORONA 
-cette jeux utilise la module turtle donc bonne chance
-1-installer python 3
- 
